@@ -26,4 +26,9 @@ export class OrderController {
     const order = await this.orderService.advance(req.params.id);
     return res.json(order);
   };
+
+  addService = async (req: Request, res: Response): Promise<Response> => {
+    const order = await this.orderService.addService(req.params.id, req.body);
+    return res.json(order);
+  }
 }

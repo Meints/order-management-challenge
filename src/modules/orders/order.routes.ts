@@ -15,5 +15,6 @@ router.use(authMiddleware);
 router.post('/', orderController.create);
 router.get('/', orderController.list);
 router.patch('/:id/advance', orderController.advance);
+router.post('/:id/services', orderController.addService);
 
 export const orderRoutes = router;

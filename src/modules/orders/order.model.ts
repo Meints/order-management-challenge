@@ -10,8 +10,7 @@ const ServiceSchema = new Schema(
       enum: Object.values(ServiceStatus),
       default: ServiceStatus.PENDING,
     },
-  },
-  { _id: false }
+  }
 );
 
 const OrderSchema = new Schema(

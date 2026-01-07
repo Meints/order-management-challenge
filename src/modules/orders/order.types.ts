@@ -17,7 +17,7 @@ export enum ServiceStatus {
 export type ServiceInput = {
   name: string;
   value: number;
-  status?: ServiceStatus;
+  status: ServiceStatus;
 };
 
 export type CreateOrderInput = {
